@@ -11,7 +11,8 @@ I am sharing my project called Skywise here to present it to you. You will like 
 
 Skywise = https://skywise.netlify.app/
 
-![image](https://github.com/HamzaDogann/SKYWISE/assets/93007915/e09f0884-507d-4eb0-826a-a2f53be9a741)
+![image](https://github.com/HamzaDogann/SKYWISE/assets/93007915/c907fe22-3a80-480e-83b8-decdb08ef915)
+
 
 
 Developed by Hamza Dogan.
