@@ -1,0 +1,706 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+
+
+
+#logo{
+    position: fixed;
+    height: 100px;
+    width: 540px;
+    background-image: url("images/SKYLOGO.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 32%;
+    margin-top: 4%;
+    transition: all 1s ease;
+    
+}
+
+.weatherapp{
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 31%;
+    height: 120px;
+    width: 600px;
+    background-image:linear-gradient(45deg,#3abe69 1%,#145fb5);
+    border-radius: 11px;
+    box-shadow: 0px 0px 30px 1px black;
+    transition: all 1s ease;
+}
+
+
+
+.error{
+    font-size: 17px;
+    margin-left: 32%;
+    margin-top: 10px;
+    color: #b03434e1;
+    display:none;
+}
+
+#durumlar{
+    position: absolute;
+   margin-left: 31%;
+   margin-top: 160px;
+   display: none;
+   transition: 0.5s;
+}
+
+#locationtext{
+ position: relative;
+  padding: 10px;
+  margin-left: 17%;
+  margin-top: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 17px;
+  outline: none;
+  font-size: 16px;
+  transition: box-shadow 0.5s ease;
+  width: 330px;
+  color: rgb(95, 95, 95);
+  
+}
+#locationtext:focus {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#searchbtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+   outline: none;
+   border-radius: 50%;
+   margin-top: 25px;
+   color: rgb(94, 94, 94);
+   margin-left: 25px;
+   transition: box-shadow 0.3s ease;
+   background-color: rgb(243, 243, 243);
+}
+#searchbtn:hover{
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.3);
+    cursor:pointer;
+}
+
+.weather-icon{
+    margin-top: 20px;
+    margin-left: 350px;
+    width: 220px;
+    position: absolute;
+}
+
+#temp{
+    position: absolute;
+   margin-left: 120px;
+   margin-top: 70px;
+   font-size: 80px;
+   color: #ffffff;
+   position: absolute;
+   
+}
+
+#city{
+    margin-left: 120px;
+    margin-top: 178px;
+    font-size: 20px;
+    position: absolute;
+    color: #333333;
+    
+    
+    
+}
+
+
+.status{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 280px;
+    
+    align-items: center;
+    
+}
+
+.humidity{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#windlocation{
+    padding-top: 30px;
+}
+
+#humiloca{margin-top: 30px;
+color: white;}
+
+.status1{
+    display: inline;
+    margin-top: 280px;
+    position: absolute;
+    margin-left: 80px;
+}
+
+.wind{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    color: white
+    
+}
+
+#windloca{
+    margin-top: 80px;
+    margin-left: 10px;
+    text-align: center;
+    color: white
+    
+}
+
+
+.webbg{
+    z-index: -2;
+    position: fixed;
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(45deg,#28a052 30% ,#006be6 90%);
+    
+}
+
+.temabg{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(45deg,#25a142,#1f75c6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -3;
+    filter: brightness(100%);
+    display: none;
+   
+}
+
+#generalcard{
+  display: none;
+}
+
+.card {
+   
+    box-shadow: 4 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    width: 310px;
+    position: absolute;
+    margin-left: 76%;
+    border-radius: 8px 8px 10px 8px;
+    margin-top: 234px;
+  }
+
+  .cardpictures{
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.771);
+    
+  }
+  
+  /* Add some padding inside the card container */
+ .container {
+    padding: 2px 16px;
+    background-color: #282828cd;
+    border-radius: 0px 0px 8px 8px;
+    margin-top: -5px;
+  }
+
+h4{
+    color: white;
+}
+
+.texts{
+    color: rgb(227, 227, 227);
+}
+
+
+#card2{
+    margin-left: 4%;
+    position: absolute;
+    
+}
+
+
+#card3{
+    margin-top: 31%;
+    margin-left: 4%;
+    position: absolute;
+}
+#card4{
+    margin-top: 31%;
+    margin-left: 76%;
+    position: absolute;
+}
+
+
+.by{
+    color: rgba(44, 44, 44, 0.767);
+    position: absolute;
+    margin-left: 43%;
+    margin-top: 680px;
+}
+
+@media screen and (max-width: 1488px){
+    .card{
+        width: 260px;
+        margin-top: 240px;
+    }
+
+    #card2{
+        margin-left: 4%;
+        position: absolute;
+        
+    }
+    
+    
+    #card3{
+        margin-top: 33%;
+        margin-left: 4%;
+        position: absolute;
+    }
+    #card4{
+        margin-top: 34%;
+        margin-left: 80%;
+        position: absolute;
+    }
+    #card1{
+        margin-left: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1381px){
+    .card{
+        width: 250px;
+        margin-top: 240px;
+    }
+
+    #card2{
+        margin-left: 4%;
+        position: absolute;
+        
+    }
+    
+    
+    #card3{
+        margin-top: 34%;
+        margin-left: 4%;
+        position: absolute;
+    }
+    #card4{
+        margin-top: 35%;
+        margin-left: 80%;
+        position: absolute;
+    }
+    #card1{
+        margin-left: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    .weatherapp{
+        margin-left: 28%;
+    }
+    #logo{
+        margin-left: 29%;
+        margin-top: 4%;
+        transition: all 1s ease;   
+    }
+    #durumlar{
+        margin-left: 28%;
+        margin-top: 160px;
+    }
+
+    .card{
+        width: 230px;
+        margin-top: 240px;
+    }
+
+   
+    
+    
+    #card3{
+        margin-top: 37%;
+        margin-left: 4%;
+        position: absolute;
+    }
+    #card4{
+        margin-top: 38%;
+        margin-left: 80%;
+        position: absolute;
+    }
+  
+}
+
+@media screen and (max-width: 1186px){ 
+    .weatherapp{
+        margin-left: 26%;
+    }
+    #logo{
+        
+        margin-left: 28%;
+        margin-top: 4%;
+        transition: all 1s ease; 
+    }
+    #durumlar{
+        margin-left: 26%;
+        margin-top: 160px;
+    }
+
+    .card{
+        width: 230px;
+        margin-top: 240px;
+    }
+
+   
+    #card3{
+        margin-top: 40%;
+        margin-left: 4%;
+        position: absolute;
+    }
+    #card4{
+        margin-top: 40%;
+        margin-left: 80%;
+        position: absolute;
+    }
+
+    
+}
+
+@media screen and (max-width: 1166px){ 
+    .card{
+        width: 200px;
+        margin-top: 240px;
+    }
+
+   
+    #card3{
+        margin-top: 40%;
+        margin-left: 4%;
+        position: absolute;
+    }
+    #card4{
+        margin-top: 40%;
+        margin-left: 80%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 1152px){
+    .card{
+        width: 500px;
+        margin-top: 900px;
+    }
+    #card3{
+        margin-left: 31%;
+        margin-top: 700px;
+    }
+    #card2{
+        margin-left: 31%;
+        margin-top: 1030px;
+    }
+    #card4{
+        margin-left: 31%;
+        margin-top: 1360px;
+    }
+    #card1{
+        margin-left: 31%;
+        margin-top: 1690px;
+    }
+   .webbg{
+    height: 2000px;
+   }
+
+ }
+
+
+@media screen and (max-width: 1084px){
+    .weatherapp{
+        margin-left: 24%;
+    }
+    #logo{
+        
+        margin-left: 26%;
+        margin-top: 4%;
+        transition: all 1s ease;
+    }
+    #durumlar{
+        margin-left: 24%;
+        margin-top: 160px;
+    }
+}
+
+
+
+@media screen and (max-width: 981px){
+    .weatherapp{
+        margin-left: 23%;
+    }
+    #logo{
+        
+        margin-left: 20%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 904px){
+    .weatherapp{
+        margin-left: 20%;
+    }
+    #logo{
+        
+        margin-left: 17%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+    #durumlar{
+        margin-left: 20%;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 814px){
+    .weatherapp{
+        margin-left: 16%;
+    }
+    #logo{
+        
+        margin-left: 12%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+    #durumlar{
+        margin-left: 17%;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 748px){
+    .weatherapp{
+        margin-left: 12%;
+    }
+    #logo{
+        
+        margin-left: 9%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+    #durumlar{
+        margin-left: 14%;
+        margin-top: 160px;
+    }
+    
+}
+
+@media screen and (max-width: 705px){
+    .weatherapp{
+        margin-left: 9%;
+    }
+    #logo{
+        
+        margin-left: 5%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+    #durumlar{
+        margin-left: 10%;
+        margin-top: 160px;
+    }
+
+}
+
+@media screen and (max-width: 674px){
+    .weatherapp{
+        margin-left: 6%;
+    }
+    #logo{
+        
+        margin-left: 4%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+    .webbg{
+        width:  700px;
+    }
+    .temabg{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .weatherapp{
+        margin-left: 9%;
+    }
+    #logo{
+        
+        margin-left: 8%;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 640px;
+    }
+   
+   
+}
+
+@media screen and (max-width: 417px){
+    .weatherapp{
+        margin-left: 6%;
+        height: 120px;
+        width: 340px;
+        margin-top: 200px;
+    }
+    #logo{
+        
+        margin-left: -14px;
+        margin-top: 6%;
+        transition: all 1s ease;
+        height: 140px;
+        width: 400px;
+    }
+    #locationtext{
+        
+         margin-left: 3%;
+         margin-top: 30px;
+         width: 250px;
+         
+       }
+
+       #searchbtn {
+       
+        width: 50px;
+        height: 50px;
+     
+       margin-top: 25px;
+       color: rgb(94, 94, 94);
+       margin-left: 25px;
+     
+    }
+    #durumlar{
+        margin-left: 1%;
+        margin-top: 160px;
+        
+    }
+    .webbg{
+        width: 400px;
+    }
+    .temabg{
+        width: 400px;
+    }
+    #temp{
+        margin-top: 200px;
+        margin-left: 100px;
+        text-align: center;
+    }
+    .weather-icon{
+        margin-left: 84px;
+        margin-top: 10px;
+    }
+    .status1{
+        margin-top: 440px;
+        margin-left: 150px;
+    }
+    #city{
+        margin-top: 330px;
+        text-align: center;
+        margin-left: 140px;
+        font-size: 25px;
+    }
+    .status{
+        margin-left: 153px;
+        margin-top: 710px;
+    }
+    #card3{
+        margin-top: 1160px;
+        width: 300px;
+        margin-left: 40px;
+    }
+    #card2{
+        margin-top: 1420px;
+        width: 300px;
+        margin-left: 40px;
+    }
+    #card4{
+        margin-top: 1680px;
+        width: 300px;
+        margin-left: 40px;
+    }
+    #card1{
+        margin-top: 1940px;
+        width: 300px;
+        margin-left: 40px;
+    }
+    .error{
+        margin-left: 70px;
+    }
+
+}
+
+@media (max-width: 1920px) and (min-width: 1700px){
+
+    #logo{
+        margin-left: 33%;
+        width: 700px;
+        height: 200px;
+    }
+    .weatherapp{
+       margin-left: 36%;
+    }
+    #durumlar{
+        margin-left: 36%;
+    }
+    .card{
+        width: 500px;
+        
+    }
+    .card b{
+       font-size: 30px;
+        
+    }
+    .card p{
+        font-size: 16px;
+         
+     }
+     #card1, #card4{
+        margin-left: 72%;
+     }
+
+    #card3, #card4{
+       margin-top: 32%;
+    }
+        
+    }

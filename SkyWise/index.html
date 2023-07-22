@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWise</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+ 
+    
+    <div id="logo"></div>
+
+    
+
+   <div class="weatherapp" id="weatheraction">
+    <div id="search">
+        <input type="text" name="" id="locationtext" placeholder="Write a city" spellcheck="false" maxlength="23">
+        <button id="searchbtn"><span class="material-symbols-outlined" id="searchresim"> search
+ </span></button>
+ <div class="error">
+    <p>Invalid city name</p>
+ </div>
+
+     
+    </div>
+   </div>
+
+   <div id="durumlar">
+    <img src="images/clouds.png" class="weather-icon">
+    <h1 id="temp">23°C</h1>
+    <h2 id="city">Serinhisar</h2>
+    <div>
+       
+        <div class="status">
+            <img src="images/humidity.png" alt="" id="humi">
+            <p class="humidity">50%</p>
+            <p id="humiloca">Humidity</p>
+        </div>
+
+
+        <div class="status1">
+            <img src="images/wind.png" alt="" id="">
+            <p class="wind">20 km/h</p>
+            <p id="windloca">Wind</p>
+        </div>
+
+ 
+
+    </div>
+ </div>
+    
+
+  <div id="generalcard">
+ <div class="card" id="card1">
+    <img id="card1img" src="images/Plaj.jpg" alt="Avatar" style="width:100%" class="cardpictures">
+    <div class="container">
+      <h4><b id="cardtitle1">A beautiful beach</b></h4>
+      <p class="texts" id="cardtext1">You can go to a beautiful beach. Enjoy your sunbathing.</p>
+    </div>
+  </div>
+
+  <div class="card" id="card2">
+    <img id="card2img" src="images/Bisiklet.png" alt="Avatar" style="width:100%" class="cardpictures">
+    <div class="container">
+      <h4><b id="cardtitle2">Step on the pedals</b></h4>
+      <p class="texts" id="cardtext2">How about cycling with your friends?</p>
+    </div>
+  </div>
+
+  <div class="card" id="card3">
+    <img id="card3img" src="images/picnic.png" alt="Avatar" style="width:100%" class="cardpictures">
+    <div class="container">
+      <h4><b id="cardtitle3">A pleasant picnic</b></h4>
+      <p class="texts" id="cardtext3">You can go on a picnic with your family or friend.</p>
+    </div>
+  </div>
+
+  <div class="card" id="card4">
+    <img  id="card4img" src="images/IceCream.png" alt="Avatar" style="width:100%" class="cardpictures">
+    <div class="container">
+      <h4><b id="cardtitle4">Great Ice Cream</b></h4>
+      <p class="texts" id="cardtext4">You can eat ice cream in this hot weather.</p>
+    </div>
+  </div>
+
+</div> 
+
+
+
+
+    <div class="temabg"></div>
+    <div class="webbg" id="bg"></div>
+
+    
+
+    <script src="script.js"></script>
+
+  
+</body>
+</html>
